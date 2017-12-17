@@ -25,6 +25,10 @@ namespace POO
             get { return taxaMovimento; }
         }
 
+        public override void Sacar(decimal valor)
+        {
+            base.Sacar( valor + (this.taxaMovimento * valor));
+        }
 
     }
 }

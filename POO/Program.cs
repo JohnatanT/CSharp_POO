@@ -12,12 +12,16 @@ namespace POO
         {
             //Objeto Conta Corrente
             ContaCorrente cc = new ContaCorrente();
-            Console.WriteLine(cc.TaxaMovimento);
-            Console.WriteLine(cc.Limite);
+            cc.Saldo = 1000;
+            cc.Sacar(200);
+            Console.WriteLine(cc.Saldo);
 
             //Obejto Conta Poupança
             ContaPoupanca cp = new ContaPoupanca();
-            Console.WriteLine(cp.Limite);
+            cp.Saldo = 1000;
+            cp.Sacar(200);
+
+            Console.WriteLine(cp.Saldo);
            
 
             Console.ReadLine();

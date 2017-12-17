@@ -65,15 +65,15 @@ namespace POO
         /* Métodos */
 
         //Função de Sacar
-        public void Sacar(decimal valor)
+        public virtual void Sacar(decimal valor)
         {
-            saldo = saldo - valor;
+            this.saldo = this.saldo - valor;
         }
 
         //Função de Depositar
         public void Depositar(decimal valor)
         {
-            saldo = saldo + valor;
+            this.saldo = this.saldo + valor;
         }
     }
 }

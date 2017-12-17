@@ -13,5 +13,10 @@ namespace POO
                 
         }
 
+        public override void Sacar(decimal valor)
+        {
+            base.Sacar(valor);
+        }
+
     }
 }
