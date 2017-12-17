@@ -2,7 +2,7 @@
 
 namespace POO
 {
-    public class Conta
+    public abstract class Conta
     {
         private int agencia;
         private int numeroConta;
