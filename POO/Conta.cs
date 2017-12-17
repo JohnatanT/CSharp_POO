@@ -26,13 +26,13 @@ namespace POO
         //Limite
         public decimal Limite {
             get { return limite; }
-            set { limite = value; }
+           private set { limite = value; }
         }
 
         //Agencia
         public int Agencia
         {
-            set
+            private set
             {
                 if (value > 0)
                 {
@@ -45,7 +45,7 @@ namespace POO
         //Numero da Conta
         public int NumeroConta
         {
-            set
+            private set
             {
                 if (value > 0)
                 {
@@ -58,7 +58,7 @@ namespace POO
         //Saldo
         public decimal Saldo
         {
-            set { saldo = value; }
+            private set { saldo = value; }
             get { return saldo; }
         }
 

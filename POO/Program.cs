@@ -10,18 +10,24 @@ namespace POO
     {
         static void Main(string[] args)
         {
-            //Objeto Conta Corrente
+           
             ContaCorrente cc = new ContaCorrente();
-            cc.Saldo = 1000;
-            cc.Sacar(200);
-            Console.WriteLine(cc.Saldo);
-
-            //Obejto Conta Poupança
             ContaPoupanca cp = new ContaPoupanca();
-            cp.Saldo = 1000;
+            Relatorio rel = new Relatorio();
+
+            cc.Depositar(1000);
+            cc.Sacar(200);
+            
+            cp.Depositar(1000);
             cp.Sacar(200);
 
+            Console.WriteLine(cc.Saldo);
             Console.WriteLine(cp.Saldo);
+
+            rel.Somar(cc);
+            rel.Somar(cp);
+  
+            Console.WriteLine(rel.SaldoGeral);
            
 
             Console.ReadLine();
