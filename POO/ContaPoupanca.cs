@@ -18,5 +18,10 @@ namespace POO
             base.Sacar(valor);
         }
 
+        public override void Depositar(decimal valor)
+        {
+            base.Saldo += valor;
+        }
+
     }
 }

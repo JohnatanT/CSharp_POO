@@ -58,7 +58,7 @@ namespace POO
         //Saldo
         public decimal Saldo
         {
-            private set { saldo = value; }
+            protected set { saldo = value; }
             get { return saldo; }
         }
 
@@ -67,13 +67,10 @@ namespace POO
         //Função de Sacar
         public virtual void Sacar(decimal valor)
         {
-            this.saldo = this.saldo - valor;
+            saldo = saldo - valor;
         }
 
         //Função de Depositar
-        public void Depositar(decimal valor)
-        {
-            this.saldo = this.saldo + valor;
-        }
+        public abstract void Depositar(decimal valor);
     }
 }
